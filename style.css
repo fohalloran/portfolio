@@ -1,0 +1,161 @@
+.dark-bg{
+    background-color: rgb(20, 23, 48);
+}
+.title-64{
+    font-size: 64px;
+}
+.title-48{
+    font-size: 48px;
+}
+.centre{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+
+.bold{
+    font-weight: bold;
+
+}
+.border-w2{
+    border: solid 1px black
+}
+.accent-border{
+    border-color:rgb(103, 212, 189)
+}
+.border-r8{
+    border-radius: 8px;
+}
+
+.border-none{
+    border: none;
+}
+
+
+
+.header-bar{
+    display: inline;
+    text-align: center;
+}
+
+.header-left{
+    float:left
+    
+}
+.header-right{
+    float:right
+    
+}
+
+.text-container{
+    display: block;
+    padding: 5%
+}
+
+.header-icon{
+    display: inline;
+    padding: 10px;
+    margin-left: 0.5vw;
+    text-align: center;
+    transition: 0.25s;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0);
+    color:white;
+    outline: none;
+    justify-self: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.header-icon:hover{
+    background-color: rgba(255, 255, 255, 0.753);
+    color:rgb(20, 23, 48);
+    cursor: pointer;
+
+}
+
+.margin-top-50{
+    margin-top: 50px;
+}
+
+.font-console{
+    font-family:"Lucida Console";
+}
+
+.welcome-text{
+    padding-left: 25%;
+    padding-top: 10%;
+}
+
+.std-colour{
+    color:rgb(243, 243, 243)
+}
+.greyed-out-colour{
+    color:rgba(243, 243, 243, 0.527)
+}
+.accent-colour{
+    color:rgb(103, 212, 189)
+}
+
+.border-radius-8{
+    border-radius: 8px;
+}
+.border-black-2{
+    border: black 2px solid
+}
+
+.container{
+    width:100%;
+    color:white;
+}
+
+.grid{
+    display: flex;
+    column-gap: 50px;
+    row-gap: 50px;
+    align-content: center;
+    justify-content: center; 
+    align-items: center;
+}
+.project-tile{
+    display: inline-grid;
+    transition: 0.25s;
+    width: 20vw;
+    height: 20vw;
+    border: 1px black solid
+}
+
+.project-title{
+    font-size: 24px;
+    align-content: center;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    transition: 0.2s;
+}
+.project-title:hover{
+    font-size: 28px;
+    background-color: rgb(138, 138, 138);
+    color: white;;
+}
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 1s steps(100, end),
+      blink-caret .75s step-end forwards;
+  }
+
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0% }
+    to { width: 12% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(103, 212, 189); }
+  }
