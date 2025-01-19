@@ -44,6 +44,9 @@
 .header-bar {
     display: inline;
     text-align: center;
+    position: sticky;
+    top: 0px;
+    background-color: red;
 }
 
 .header-left {
@@ -201,41 +204,68 @@
     }
 }
 
-.project {
+.horizontal{
+    margin: 3rem;
+}
+
+.project .experience {
     margin: 2rem 2rem 2rem 2rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     transition: 0.2s;
+}
+
+.project{
+    border-radius: 1rem;
+}
+
+.section-title {
+    padding: 2rem;
+    font-size: xx-large;
+    color: rgb(103, 212, 189);
+    text-decoration: underline;
+    font-weight: bold;
+
 }
 
 .project:hover {
     background-color: rgba(199, 199, 199, 0.103);
 }
 
-.project>a {
+a {
     text-decoration: none;
+}
+
+.description {
+    padding-left: 2rem;
+    padding-right: 2rem;
     color: white;
 }
 
-.project>a>.description {
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.project>a>.title {
+.title {
     padding: 2rem;
     font-size: xx-large;
     color: rgb(103, 212, 189);
     padding-bottom: 1rem;
     padding-top: 1rem;
 }
-.project>a>.company {
+
+.otd-title {
+    padding: 3rem;
+    padding-top: 5rem;
+    font-size: xx-large;
+    color: rgb(103, 212, 189);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.company {
     padding-left: 2rem;
     font-size: x-large;
     color: rgba(255, 255, 255, 0.432);
 
 }
 
-.project>a>.stack {
+.stack {
     padding: 2rem;
     text-align: center;
     font-family: "Lucida Console";
@@ -244,11 +274,20 @@
     padding-top: 1rem;
 }
 
+.more-info {
+    padding: 2rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+
 .welcome-text {
     width: 50%;
     position: sticky;
     top: 8rem;
-    padding-left:10rem;
+    padding-left: 10rem;
 }
 
 .welcome-text>.name {
@@ -264,3 +303,12 @@
 .welcome-text>.description {
     color: rgba(255, 255, 255, 0.466);
 }
+
+.link {
+    color: white;
+    text-decoration: none;
+
+}
+
+.selected{background-color: lightgray;}
+
