@@ -1,6 +1,8 @@
 .dark-bg {
     background-color: rgb(20, 23, 48);
-    font-family: "Roboto", sans-serif
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    overflow-x: hidden;
 }
 
 .title-64 {
@@ -323,11 +325,25 @@ a {
         width: 100%;
     }
 
-    .welcome-text{
-        width: 100%;
-        position:static;
-        top: none;
-        padding: none;
+    .welcome-text {
+        width: 50%;
+        position: sticky;
+        top: 8rem;
+        padding-left: 10rem;
         text-align: center;
+    }
+    
+    .welcome-text>.name {
+        font-size: 3rem;
+        color: white
+    }
+    
+    .welcome-text>.job {
+        font-size: xx-large;
+        color: rgba(255, 255, 255, 0.466);
+    }
+    
+    .welcome-text>.description {
+        color: rgba(255, 255, 255, 0.466);
     }
   }
