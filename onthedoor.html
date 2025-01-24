@@ -6,35 +6,21 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-
-
-    <style>
-        html,
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Roboto", sans-serif
-        }
-    </style>
 </head>
 
 <body class="dark-bg">
     <div class="container">
         <div class="header-bar">
             <div class="header-left">
-                <a href="index.html" class="header-icon border-r8 font-console border-none">
+                <a href="index.html" class="header-icon border-r8 font-console border-none selected">
                     <i class="material-icons" style="vertical-align: middle; padding-right:4px">home</i>Home</a>
             </div>
 
             <div class="header-right">
                 <a href="https://github.com/fohalloran" target="_blank"
                     class="header-icon border-r8 font-console border-none"><i class="material-icons"
-                        style="vertical-align: middle; padding-right:4px; padding-right:4px">table</i>GitHub</a>
+                        style="vertical-align: middle; padding-right:4px; padding-right:4px">link</i>GitHub</a>
+
                 <a href="https://uk.linkedin.com/in/fergus-ohalloran" target="_blank"
                     class="header-icon border-r8 font-console border-none"><i class="material-icons"
                         style="vertical-align: middle; padding-right:4px">link</i>LinkedIn</a>
@@ -53,13 +39,16 @@
                     <div class="section-title">GitHub links</div>
                     <div>
                         <ul>
-                            <li class="link"><a class="link"
+                            <li class="link"><a class="link" target="_blank"
                                     href="https://uk.linkedin.com/in/fergus-ohalloran">Overview</a></li>
-                            <li class="link"><a class="link" href="https://uk.linkedin.com/in/fergus-ohalloran">Frontend
+                            <li class="link"><a class="link" target="_blank"
+                                    href="https://uk.linkedin.com/in/fergus-ohalloran">Frontend
                                     (Angular)</a></li>
-                            <li class="link"><a class="link" href="https://uk.linkedin.com/in/fergus-ohalloran">Events
+                            <li class="link"><a class="link" target="_blank"
+                                    href="https://uk.linkedin.com/in/fergus-ohalloran">Events
                                     service (Go)</a></li>
-                            <li class="link"><a class="link" href="https://uk.linkedin.com/in/fergus-ohalloran">Tickets
+                            <li class="link"><a class="link" target="_blank"
+                                    href="https://uk.linkedin.com/in/fergus-ohalloran">Tickets
                                     service (Go)</a></li>
                         </ul>
                     </div>
@@ -70,13 +59,46 @@
                         customers, promoting their location and increasing profits due to higher footfall, the artist
                         gets more exposure due to a larger audience and the consumer can go to events at a reduced cost.
                     </div>
+                    <div class="section-title">Technical Description</div>
+                    <div class="description">The app uses an Ionic/Angular frontend to allow the use of Angular for
+                        native mobile development with a Go backend. The backend is split into stateless services, each
+                        stored in seperate repos, running on seperate containers, allowing each one to be deployed
+                        seperately. This allows for easier individual scaling if needed. The services communicate via
+                        HTTPS and currently are split into Events and Tickets.
+
+                        The Events service handles all interactions with retrieving and creating new events and the
+                        Tickets services handles all interactions with retrieving and creating new tickets. Along with
+                        data describing an event, the coordinates of the event is stored, therefore when a user opens
+                        the app, it can retrieve their location and calculate the distance to each event and only
+                        retrieve the events with a set maximum distance. This was achieved using PostGIS.
+
+                        AI tools such as ChatGPT and Co-Pilot were also used in the development to generate test data to
+                        insert into the databases as well as to debug code.
+                    </div>
 
                     <div class="section-title">Video demonstration</div>
-                    <div class="description">NOT YET ADDED</div>
+                    <div class="description">
+                        The video below shows a prototype of the app, where a user can log in, can search the events
+                        within their area, "buy" a ticket which adds it to their user in the backend, then can use the
+                        ticket to have it marked as used.
+                        <video controls>
+                            <source src="onthedoor-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
 
 
                     <div class="section-title">Stack</div>
-                    <div class="stack">Go Angular PostgreSQL OAuth.20 Github Docker</div>
+                    <div class="description">
+                        <ul>
+                            <li>Go</li>
+                            <li>Angular</li>
+                            <li>PostgreSQL</li>
+                            <li>OAuth.20</li>
+                            <li>Github</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
 
 
 
