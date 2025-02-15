@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fergus O'Halloran</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="dark-bg">
+    <div class="container">
+        <div class="header-bar">
+            <div class="header-left">
+                <a href="index.html" class="header-icon border-r8 font-console border-none selected">
+                    <i class="material-icons" style="vertical-align: middle; padding-right:4px">home</i>Home</a>
+            </div>
+
+            <div class="header-right">
+                <a href="https://github.com/fohalloran" target="_blank"
+                    class="header-icon border-r8 font-console border-none"><i class="material-icons"
+                        style="vertical-align: middle; padding-right:4px; padding-right:4px">link</i>GitHub</a>
+
+                <a href="https://uk.linkedin.com/in/fergus-ohalloran" target="_blank"
+                    class="header-icon border-r8 font-console border-none"><i class="material-icons"
+                        style="vertical-align: middle; padding-right:4px">link</i>LinkedIn</a>
+            </div>
+
+        </div>
+
+
+        <div class="grid-container">
+            <div class="grid-item left">
+                <div class="welcome-text">
+                    <div class="name">Colour Mix.</div>
+                    <div class="job">Try to mix the target colour!</div>
+                </div>
+            </div>
+
+
+            <div class="grid-item right">
+                <div class="projects-container">
+                    <div class="section-title">GitHub link</div>
+                    <div>
+                        <ul>
+                            <li class="link"><a class="link" target="_blank"
+                                    href="https://github.com/fohalloran/colour-mix">Code</a></li>
+                    </div>
+
+                    <div class="section-title">Description</div>
+                    <div class="description">A simple game where the player has the select values of red, green and blue
+                        to be mixed together to create the target colour.
+                        There are three rounds and the score from each round is combined for a total score. The score is
+                        calculated by summing the difference between the user selected and actual values for the red,
+                        green and blue to get a total difference, then dividing that by the total possible difference
+                        (255*3) and muliplying by 100 to get a percentage. Then 100 - that percentage to get a score out
+                        of 100.
+                    </div>
+                    <div class="section-title">Technical Description</div>
+                    <div class="description">The app is entirely built inside React using typescript and was largely
+                        created as a learning opportunity for me to build my React skills as I had previously largely
+                        used Angular
+                    </div>
+
+                    <div class="section-title">Video demonstration</div>
+                    <div class="description">
+                        This videos shows a user playing the game
+                        <video controls class="centre">
+                            <source src="assets/colour-mix-demo.mp4" type="video/mp4" class="centre">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+
+                    <div class="section-title">Stack</div>
+                    <div class="description">
+                        <ul>
+                            <li>React</li>
+                        </ul>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+</body>
